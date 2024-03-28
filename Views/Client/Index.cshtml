@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "預約餐廳系統";
+}
+
+<h1>預約餐廳系統</h1>
+
+
+@using (Html.BeginForm("Rewrite", "Client", FormMethod.Get))
+{
+@*    <label for="textBox1">預約時間(lunch/dinner):</label>
+    <input type="text" name="textBox1" id="meal" />
+    <label for="textBox1">預約日期(請輸入yyyymmdd):</label>
+    <input type="text" name="textBox2" id="date" />*@
+    <button type="submit" id="myButton" class="btn btn-primary">查詢預約時間</button>
+}
+
+
+@Html.Raw(ViewBag.Message)
